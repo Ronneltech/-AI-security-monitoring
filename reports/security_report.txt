@@ -1,8 +1,8 @@
 ============================================================
 SECURITY MONITORING REPORT
 ============================================================
-Generated: 2026-08-10 18:56:22
-Alerts analyzed: 3
+Generated: 2026-08-10 19:09:24
+Alerts analyzed: 2
 
 ------------------------------------------------------------
 ALERT #1
@@ -26,38 +26,21 @@ Recommendations:
 ------------------------------------------------------------
 ALERT #2
 ------------------------------------------------------------
-Type: privilege_change
+Type: correlated_privilege_activity
 Severity: MEDIUM
 User: service_account
 Source IP: 10.0.0.99
-Classification: Privilege-Related Activity
+Classification: Correlated Privilege Activity
 Risk: MEDIUM
 
 Explanation:
-A privilege-related event was detected and should be reviewed to confirm that the activity was authorized.
+A privilege-change attempt was followed by an approved privilege change involving the same account and source IP.
 
 Recommendations:
 - Verify that the privilege change was authorized.
-- Review the affected account.
-- Check surrounding security events.
-
-------------------------------------------------------------
-ALERT #3
-------------------------------------------------------------
-Type: privilege_change
-Severity: MEDIUM
-User: service_account
-Source IP: 10.0.0.99
-Classification: Privilege-Related Activity
-Risk: MEDIUM
-
-Explanation:
-A privilege-related event was detected and should be reviewed to confirm that the activity was authorized.
-
-Recommendations:
-- Verify that the privilege change was authorized.
-- Review the affected account.
-- Check surrounding security events.
+- Review who approved the privilege change.
+- Check surrounding authentication and authorization events.
+- Confirm that the affected account requires the assigned privileges.
 
 ============================================================
 END OF REPORT

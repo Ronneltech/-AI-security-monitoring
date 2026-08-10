@@ -1,11 +1,8 @@
 """
 AI-assisted security event analyzer.
 
-This module provides structured security analysis of alerts.
-The current implementation uses a local rule-based analysis
-layer so the project can operate without external AI services.
+Provides structured security analysis of detected alerts.
 """
-
 
 
 def analyze_alert(alert):
@@ -28,6 +25,22 @@ def analyze_alert(alert):
                 "Review authentication logs for additional activity.",
                 "Consider temporarily protecting the affected account "
                 "according to organizational policy.",
+            ],
+        }
+
+    if alert_type == "correlated_privilege_activity":
+        return {
+            "classification": "Correlated Privilege Activity",
+            "risk": "MEDIUM",
+            "explanation": (
+                "A privilege-change attempt was followed by an approved "
+                "privilege change involving the same account and source IP."
+            ),
+            "recommendations": [
+                "Verify that the privilege change was authorized.",
+                "Review who approved the privilege change.",
+                "Check surrounding authentication and authorization events.",
+                "Confirm that the affected account requires the assigned privileges.",
             ],
         }
 
