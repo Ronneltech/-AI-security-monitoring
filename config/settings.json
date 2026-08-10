@@ -1,0 +1,11 @@
+{
+    "detection": {
+        "failed_login_threshold": 5
+    },
+    "reporting": {
+        "report_file": "reports/security_report.txt"
+    },
+    "monitoring": {
+        "log_file": "logs/sample_security.log"
+    }
+}
