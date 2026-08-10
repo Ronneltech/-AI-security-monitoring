@@ -1,0 +1,64 @@
+============================================================
+SECURITY MONITORING REPORT
+============================================================
+Generated: 2026-08-10 18:56:22
+Alerts analyzed: 3
+
+------------------------------------------------------------
+ALERT #1
+------------------------------------------------------------
+Type: brute_force_suspected
+Severity: HIGH
+User: admin
+Source IP: 10.0.0.55
+Classification: Potential Brute-Force Activity
+Risk: HIGH
+
+Explanation:
+Multiple failed authentication attempts were detected for the same account and source IP.
+
+Recommendations:
+- Review the source IP address.
+- Verify whether the successful login was legitimate.
+- Review authentication logs for additional activity.
+- Consider temporarily protecting the affected account according to organizational policy.
+
+------------------------------------------------------------
+ALERT #2
+------------------------------------------------------------
+Type: privilege_change
+Severity: MEDIUM
+User: service_account
+Source IP: 10.0.0.99
+Classification: Privilege-Related Activity
+Risk: MEDIUM
+
+Explanation:
+A privilege-related event was detected and should be reviewed to confirm that the activity was authorized.
+
+Recommendations:
+- Verify that the privilege change was authorized.
+- Review the affected account.
+- Check surrounding security events.
+
+------------------------------------------------------------
+ALERT #3
+------------------------------------------------------------
+Type: privilege_change
+Severity: MEDIUM
+User: service_account
+Source IP: 10.0.0.99
+Classification: Privilege-Related Activity
+Risk: MEDIUM
+
+Explanation:
+A privilege-related event was detected and should be reviewed to confirm that the activity was authorized.
+
+Recommendations:
+- Verify that the privilege change was authorized.
+- Review the affected account.
+- Check surrounding security events.
+
+============================================================
+END OF REPORT
+============================================================
