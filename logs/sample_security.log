@@ -1,0 +1,14 @@
+2026-08-10 09:01:12 INFO AUTH user=alice source_ip=10.0.0.15 action=login status=success
+2026-08-10 09:03:44 INFO AUTH user=bob source_ip=10.0.0.22 action=login status=success
+2026-08-10 09:07:19 WARN AUTH user=admin source_ip=10.0.0.55 action=login status=failed
+2026-08-10 09:07:23 WARN AUTH user=admin source_ip=10.0.0.55 action=login status=failed
+2026-08-10 09:07:27 WARN AUTH user=admin source_ip=10.0.0.55 action=login status=failed
+2026-08-10 09:07:31 WARN AUTH user=admin source_ip=10.0.0.55 action=login status=failed
+2026-08-10 09:07:35 WARN AUTH user=admin source_ip=10.0.0.55 action=login status=failed
+2026-08-10 09:08:02 INFO AUTH user=admin source_ip=10.0.0.55 action=login status=success
+2026-08-10 09:12:40 INFO AUTH user=charlie source_ip=10.0.0.31 action=login status=success
+2026-08-10 09:18:11 WARN AUTH user=alice source_ip=10.0.0.77 action=login status=failed
+2026-08-10 09:18:15 WARN AUTH user=alice source_ip=10.0.0.77 action=login status=failed
+2026-08-10 09:25:53 INFO AUTH user=alice source_ip=10.0.0.15 action=login status=success
+2026-08-10 09:31:07 WARN AUTH user=service_account source_ip=10.0.0.99 action=privilege_change status=attempted
+2026-08-10 09:32:15 INFO AUTH user=service_account source_ip=10.0.0.99 action=privilege_change status=approved
