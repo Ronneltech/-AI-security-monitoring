@@ -1,5 +1,5 @@
-from log_collector import load_logs
-from detector import detect_threats
+from src.log_collector import load_logs
+from src.detector import detect_threats
 
 
 events = load_logs("logs/sample_security.log")

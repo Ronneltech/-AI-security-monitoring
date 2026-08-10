@@ -1,6 +1,6 @@
-from log_collector import load_logs
-from detector import detect_threats
-from ai_analyzer import analyze_alerts
+from src.log_collector import load_logs
+from src.detector import detect_threats
+from src.ai_analyzer import analyze_alerts
 
 
 events = load_logs("logs/sample_security.log")
